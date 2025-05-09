@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+
+# Виртуальное окружение
+venv/
+.venv/
+
+#  Бэкап
+backup/
+
+# настройки окружений
+.env
+*.env
+
+# IDE и прочее
+.vscode/
+.idea/
+.DS_Store
+
+
+# Прочие
+Описание/
+data.json
