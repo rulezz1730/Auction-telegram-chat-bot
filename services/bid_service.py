@@ -1,7 +1,6 @@
 import random
 import asyncio
 from utils.helpers import escape_markdown
-from zoneinfo import ZoneInfo
 from telegram import Update
 from telegram.ext import ContextTypes
 from data.storage import auction_data
@@ -18,7 +17,7 @@ async def process_user_bid_message(update: Update, context: ContextTypes.DEFAULT
     message = update.message
 
     if chat_id not in auction_data:
-        return
+        return 
 
     auctions = auction_data[chat_id]
 

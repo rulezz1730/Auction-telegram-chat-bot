@@ -3,7 +3,6 @@ from telegram import Update
 from telegram.ext import ContextTypes
 from data.storage import auction_data, scheduled_tasks
 from data.database import delete_auction
-from config import ADMIN_ID
 import pprint
 
 # Колбэк на удаление аукциона

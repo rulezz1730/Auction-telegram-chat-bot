@@ -1,7 +1,6 @@
 import asyncio
 import uuid
 from utils.decorators import admin_only
-from config import ADMIN_ID
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -9,7 +8,7 @@ from telegram.ext import ContextTypes
 from data.database import insert_auction, delete_auction
 from data.models import Auction
 from data.storage import auction_data, archived_auctions, scheduled_tasks
-from utils.helpers import escape_markdown, title_parser_new_auc, check_overlap
+from utils.helpers import title_parser_new_auc, check_overlap
 from services.auction_lifecycle import schedule_auction_start, schedule_auction_end
 
 # Обработчик команды /new_auc, доступен только админу

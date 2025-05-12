@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальное окружение
+venv/
+.venv/
+
+# Базы данных и резервные копии
+backup/
+data/aucbot.db
+
+# Логи
+*.log
+
+# Настройки окружения
+.env
+*.env
+
+# IDE и системные файлы
+.vscode/
+.idea/
+.DS_Store
+
+# Лишние данные и черновики
+Описание/
+data.json
